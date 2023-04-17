@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -24,4 +24,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+body {
+  padding: 2px;
+  margin: 2px;
+  background: radial-gradient(#009FBD,#77037B);
+  font-family: 'Retro New Version', sans-serif;
 }

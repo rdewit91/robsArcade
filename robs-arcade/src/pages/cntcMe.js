@@ -9,15 +9,12 @@ export default function cntcMe() {
         <h1>WELCOME TO MY CONTACT PAGE!!!</h1>
         <p>Feel free to use this contact information if you have any questions</p>
       </div>
-      <br></br>
       <div className={styles.cntcMeData} >
         <div className={styles.cntcText} >
           <h1>E-MAIL</h1>
           <h1>r.dewit91@outlook.com</h1>
         </div>  
-        
       </div>
-      <br></br>
       <div className={styles.cntcMeData} >
         <div className={styles.cntcText} >
           <h1>CELL PHONE</h1>
