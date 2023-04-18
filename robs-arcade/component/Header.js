@@ -5,16 +5,16 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <>
-    <nav style={{ top: '0%', position: 'sticky', width: '99%', background: '#210062' ,border: 'solid #F9D949 3px', display: 'flex', justifyContent: 'space-evenly' }}>
+    <nav style={{ top: '1%', position: 'fixed', width: '99%', background: '#210062' ,border: 'solid #F9D949 3px', display: 'flex', justifyContent: 'space-evenly' }}>
         {/* <div>
             <RiBriefcase4Fill />
         </div> */}
-        <div style={{ border: 'solid #F9D949 2px', display: 'inline', margin: '2px', padding: '2px' }}>
+        <div style={{ border: 'solid #F9D949 2px', display: 'inline'}}>
             <Link style={{ textDecoration: 'none', color: '#BDE6F1', padding: '5px', margin: '5px' }} href='/' >
                 HOME
             </Link>
         </div>
-        <div style={{ border: 'solid #F9D949 2px', display: 'inline', margin: '2px', padding: '2px' }}>
+        <div style={{ border: 'solid #F9D949 2px', display: 'inline'}}>
             <Link style={{ textDecoration: 'none', color: '#BDE6F1', padding: '5px', margin: '5px' }} href='/whakMole' >
                 WHACK A MOLE
             </Link>

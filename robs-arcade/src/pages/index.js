@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '@/styles/Home.module.css'
+import RckPprScr from '../../component/rckPprScr/rckPprScr'
 
 export default function Home() {
   return (
@@ -10,13 +11,15 @@ export default function Home() {
         <p>Thank you for taking the time visting my demonstration of my javascript skills</p>
         <p>Please enjoy this demonstration through three fun games!</p>
       </div>
+      <br></br>
       <div className={styles.homeText} >
         <h2>Not sure what game to play?</h2>
-        <p>Pllay a quick game of Rock, Paper, Scissors</p> 
+        <p>Play a quick game of Rock, Paper, Scissors</p> 
         <div>
-          RPS Component
+          < RckPprScr />
         </div>
-     </div>
+      </div>
+    
 
     </div>
     

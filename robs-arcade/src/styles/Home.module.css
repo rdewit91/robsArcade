@@ -1,12 +1,13 @@
 .homeBox {
-  margin: 5px;
+  margin: 50px;
   padding: 5px;
   color: #BDE6F1 ;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 550px;
+  /* height: 550px; */
+  /* position: absolute; */
 
 }
 

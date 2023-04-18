@@ -1,0 +1,46 @@
+.gameBox {
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    border: solid #F9D949 5px;
+    position: relative;
+
+    /* color: black; */
+}
+
+.iconBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bckGrnd {
+    margin: 3px;
+    padding: 3px;
+    border: solid #F9D949 5px;
+    background-color: #BDE6F1;
+    color: black;
+}
+
+.playBox {
+    margin: 3px;
+    padding: 3px;
+    border: solid #F9D949 3px;
+    background-color: #BDE6F1;
+    color: black;
+}
+
+.bttnBox {
+    margin: 3px;
+    padding: 3px;
+    border: solid #F9D949 3px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bttnBttn {
+    margin: 3px;
+    padding: 3px;
+    background-color: #BDE6F1;
+    color: black;
+}
