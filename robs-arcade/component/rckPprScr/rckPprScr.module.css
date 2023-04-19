@@ -4,6 +4,7 @@
     text-align: center;
     border: solid #F9D949 5px;
     position: relative;
+    width: 800px;
 
     /* color: black; */
 }
@@ -20,6 +21,7 @@
     border: solid #F9D949 5px;
     background-color: #BDE6F1;
     color: black;
+    width: 85px;
 }
 
 .playBox {
@@ -27,7 +29,8 @@
     padding: 3px;
     border: solid #F9D949 3px;
     background-color: #BDE6F1;
-    color: black;
+    /* color: black; */
+    height: 65px;
 }
 
 .bttnBox {

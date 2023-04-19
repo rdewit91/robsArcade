@@ -17,7 +17,7 @@ const randomAction = () => {
 };
 
 const calcWinner= (action1, action2) => {
-  if (action1 === action2) {
+   if (action1 === action2) {
     return 0;
   } else if (actions[action1] === action2) {
     return -1;
@@ -39,14 +39,13 @@ const ActionIcon = ({action, ...props}) => {
 
 const Player = ({name = 'Player', action = 'rock'}) => {
   return (
-    <div className='player' > 
-      {/* <h2 className={styles.bckGrnd} >YOU</h2> */}
-        <div className='score' >{`${name}`}</div>
+    <div className={styles.bckGrnd} > 
+      <h3>{`${name}`}</h3>
         <div className={styles.playBox} >
-           <div className='action' >
-             {action && <ActionIcon action={action} size={60} />}
-           </div>
-        </div>
+         <div>
+           {action && <ActionIcon action={action} size={60} />}  
+         </div>
+      </div>
     </div>
   )
 }
@@ -70,29 +69,30 @@ const ActionButton = ({action = 'rock', onActionSelect}) => {
     <button className={styles.bttnBttn} onClick={() => onActionSelect(action)} > 
       <ActionIcon action={action} size={30} />
     </button>
-    // <button className={styles.bttnBttn} > <FaHandPaper size={50}/> </button>
-    // <button className={styles.bttnBttn} > <FaHandScissors size={50}/> </button>
   )
 }
 
-const ShowWinner = ({winner = 0}) => {
+
+
+const ShowWinner = ({winner}) => {
   const text = {
-    '-1': 'YOU WIN!',
-    0: 'ITS A TIE!',
-    1: 'YOU LOSE!',
+  '-1': 'YOU WIN! PLAY CONNECT FOUR!',
+    0: 'ITS A TIE! PLAY MINE SWEEPER',
+    1: 'YOU LOSE! PLAY SPACE INVADERS',
+    null: "GAME START!",
   };
-  return (
-    <h2>{text[winner]}</h2>
-  )
+  return <h2>{text[winner]}</h2>;
+  
 }
 
 export default function rckPprScr() {
   const [playerAction, setPlayerAction] = useState('');
   const [compAction, setCompAction] = useState('')
-
-  const [playerScore, setPlayerScore] = useState(0)
-  const [compScore, setCompScore] = useState(0)
-  const [winner, setWinner] = useState(0)
+  
+  // const [playerScore, setPlayerScore] = useState(0)
+  // const [compScore, setCompScore] = useState(0)
+  const [winner, setWinner] = useState(null)
+  // const [gameStarted, setGameStarted] = useState(false);
 
   const onActionSelect = (selectAction) => {
     // setPlayerAction(selectAction)
@@ -101,18 +101,21 @@ export default function rckPprScr() {
     setCompAction(newCompAction);
     const newWinner = calcWinner(selectAction, newCompAction)
     setWinner(newWinner)
-    if (newWinner === -1) {
-      setPlayerScore(playerScore + 1)
-    } else if (newWinner === 1) {
-      setCompScore(compScore + 1)
-    };
+    // setGameStarted(true);
+    // if (newWinner === -1) {
+    //   setPlayerScore(playerScore + 1)
+    // } else if (newWinner === 1) {
+    //   setCompScore(compScore + 1)
+    // };
   }
+
+
 
   return (
     <>
       <div className={styles.gameBox} >
         <div  >
-            <h2>ROCK PAPER SCISSORS</h2>
+            <h2>LETS PLAY!!!</h2>
         </div>
         <div className='container' >
           <div className={styles.iconBox} >
