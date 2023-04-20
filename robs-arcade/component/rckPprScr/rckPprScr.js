@@ -76,7 +76,7 @@ const ActionButton = ({action = 'rock', onActionSelect}) => {
 
 const ShowWinner = ({winner}) => {
   const text = {
-  '-1': 'YOU WIN! PLAY CONNECT FOUR!',
+  '-1': 'YOU WIN! PLAY PAC MAN!',
     0: 'ITS A TIE! PLAY MINE SWEEPER',
     1: 'YOU LOSE! PLAY SPACE INVADERS',
     null: "GAME START!",
