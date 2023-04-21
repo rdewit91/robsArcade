@@ -19,8 +19,6 @@ export default function Home() {
           < RckPprScr />
         </div>
       </div>
-    
-
     </div>
     
 

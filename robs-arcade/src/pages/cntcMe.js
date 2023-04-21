@@ -20,7 +20,6 @@ export default function cntcMe() {
           <h1>CELL PHONE</h1>
           <h1>585-315-3335</h1>
         </div>
-        
       </div>
     </div>
     <div class='light x1'></div>
