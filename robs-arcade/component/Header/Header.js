@@ -7,27 +7,27 @@ export default function Header() {
     <>
     <nav className={styles.navBody} >
         <div  style={{ display: 'inline' }}>
-            <Link  style={{ textDecoration: 'none', color: '#fffffc', padding: '5px', margin: '5px' }} href='/' >
+            <Link  style={{ textDecoration: 'none', color: '#fffffc', padding: '0.1125em', margin: '0.1125em' }} href='/' >
                 <button className={styles.bttnStyle}  >HOME</button>
             </Link>
         </div>
         <div style={{ display: 'inline' }}>
-            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '5px', margin: '5px' }} href='/mineSwp' >
+            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '0.1125em', margin: '0.1125em' }} href='/mineSwp' >
                 <button className={styles.bttnStyle} >MINE SWEEPER</button>
             </Link>
         </div>
         <div style={{ display: 'inline' }}>
-            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '5px', margin: '5px' }} href='/pacMam' >
-                <button className={styles.bttnStyle} >PAC MAN</button>
+            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '0.1125em', margin: '0.1125em' }} href='/hngMan' >
+                <button className={styles.bttnStyle} >HANG MAN</button>
             </Link>
         </div>
         <div style={{ display: 'inline' }}>
-            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '5px', margin: '5px' }} href='/spacInvd' >
+            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '0.1125em', margin: '0.1125em' }} href='/spacInvd' >
                 <button className={styles.bttnStyle} >SPACE INVADERS</button>
             </Link>
         </div>
         <div style={{ display: 'inline' }}>
-            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '5px', margin: '5px' }} href='/cntcMe' >
+            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '0.1125em', margin: '0.1125em' }} href='/cntcMe' >
                 <button className={styles.bttnStyle}>CONTACT ME</button>    
             </Link>
         </div>
