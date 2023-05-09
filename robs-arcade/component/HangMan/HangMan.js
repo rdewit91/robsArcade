@@ -3,6 +3,10 @@ import Figure from './Figure'
 import styles from './hangMan.module.css'
 import WrongLetters from './WrongLetters'
 import Word from './Word'
+// import {showNotif as show} from './helper/helper'
+import Popup from './PopUp'
+// import Notif from './Notif'
+import dynamic from 'next/dynamic'
 
 const words = ['application', 'programming', 'interface', 'wizard'];
 let selectedWord = words[Math.floor(Math.random() * words.length)];
@@ -12,7 +16,7 @@ function HangMan() {
   const [playable, setPlayable] = useState(true);
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
-  // const [showNotification, setShowNotification] = useState(false);
+  // const [showNotif, setShowNotif] = useState(false);
 
   useEffect(() => {
     const handleKeydown = event => {
@@ -23,13 +27,13 @@ function HangMan() {
           if (!correctLetters.includes(letter)) {
             setCorrectLetters(currentLetters => [...currentLetters, letter]);
           } else {
-            // show(setShowNotification);
+            // show(setShowNotif);
           }
         } else {
           if (!wrongLetters.includes(letter)) {
             setWrongLetters(wrongLetters => [...wrongLetters, letter]);
           } else {
-            // show(setShowNotification);
+            // show(setShowNotif);
           }
         }
       }
@@ -53,16 +57,17 @@ function HangMan() {
 
   return (
     <>
-    <div className={styles.gameContainer} >
-      <Figure/>
-      <WrongLetters wrongLetters={wrongLetters} />
-      <Word selectedWord={selectedWord} correctLetters={correctLetters} />
-
-    </div>
-    
+      <div className={styles.gameContainer} >
+        <Figure wrongLetters={wrongLetters} />
+        <WrongLetters wrongLetters={wrongLetters} />
+        <Word selectedWord={selectedWord} correctLetters={correctLetters} />
+        <Popup correctLetters={correctLetters} wrongLetters={wrongLetters}  selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain} />
+        {/* <Notif showNotif={showNotif}  /> */}
+      </div>
+      
     </>
-    
   )
 }
 
-export default HangMan
+// export default HangMan
+export default dynamic (() => Promise.resolve(HangMan), {ssr: false})

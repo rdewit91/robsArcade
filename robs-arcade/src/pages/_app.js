@@ -11,6 +11,8 @@ import Footer from '../../component/Footer/Footer'
 import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }) {
+// function App({ Component, pageProps }) {
+
   return (
     <>
       <Header />
@@ -19,3 +21,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+// export default App

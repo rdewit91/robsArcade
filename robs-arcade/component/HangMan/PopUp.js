@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
 import styles from './hangMan.module.css'
-import { checkWin } from '../helpers/helpers';
+import { checkWin } from './helper/helper'
 
-const Popup = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAgain}) => {
+const PopUp = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAgain}) => {
   let finalMessage = '';
   let finalMessageRevealWord = '';
   let playable = true;
 
   if( checkWin(correctLetters, wrongLetters, selectedWord) === 'win' ) {
-    finalMessage = 'Congratulations! You won! 😃';
+    finalMessage = 'Congratulations! You won!';
     playable = false;
   } else if( checkWin(correctLetters, wrongLetters, selectedWord) === 'lose' ) {
-    finalMessage = 'Unfortunately you lost. 😕';
+    finalMessage = 'Unfortunately you lost.';
     finalMessageRevealWord = `...the word was: ${selectedWord}`;
     playable = false;
   }
@@ -21,6 +21,7 @@ const Popup = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAga
   });
 
   return (
+    <>
     <div className={styles.popupContainer} style={finalMessage !== '' ? {display:'flex'} : {}}>
       <div className={styles.popup}>
         <h2>{finalMessage}</h2>
@@ -28,7 +29,8 @@ const Popup = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAga
         <button onClick={playAgain}>Play Again</button>
       </div>
     </div>
+    </>
   )
 }
 
-export default Popup
+export default PopUp
