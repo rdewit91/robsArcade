@@ -8,7 +8,12 @@ function hngMan() {
      <div className={styles.homeBox} >
       <div className={styles.homeText} >
         <h1>HANG MAN</h1>
-        <p>Heres how to play: description</p>
+        <p>Heres how to play:</p>
+        <p>Your task is to guess the hidden word by suggesting letters that might be in the word.</p>
+        <p>Type in a letter that you think might be in the word. If the letter is correct, it will be revealed in the word. If the letter is incorrect, a part of a hangman will be shown.</p>
+        <p>Type in a letter that you think might be in the word. If the letter is correct, it will be revealed in the word. If the letter is incorrect, a part of a hangman will be drawn on the screen.</p>
+        <p>Keep guessing letters until you have either guessed all the letters in the word, or you have made too many incorrect guesses and the hangman is complete.</p>
+        <p>If you successfully guess the word, you win the game. If you make too many incorrect guesses and the hangman is complete, you lose the game.</p>
       </div>
       <div className={styles.homeText} >
         <h2>Play Here!</h2>
