@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '@/styles/Home.module.css'
-import MineSweeper from '../../component/MineSwp/MineSweeper'
+// import MineSweeper from '../../component/MineSwp/MineSweeper'
+import App from '../../component/MineSwp/App'
 
 export default function mineSwp() {
   return (
@@ -11,7 +12,8 @@ export default function mineSwp() {
     </div>
     <div className={styles.homeText} >
       <h2>Play Here!</h2>
-        < MineSweeper />
+        {/* < MineSweeper /> */}
+        <App/>
     </div>
   </div>
   )
