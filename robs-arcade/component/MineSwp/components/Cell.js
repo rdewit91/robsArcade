@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './styles.module.scss'
 
 const Cell = props => {
   let cell = () => {
@@ -59,7 +60,7 @@ const Cell = props => {
     } else {
       return (
         <div
-          className="cell"
+          className={styles.cell}
           onContextMenu={e => {
             // don't load that nasty context menu, flag it up instead :^)
             e.preventDefault();

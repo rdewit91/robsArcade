@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Row from "./Row";
-
+import styles from './styles.module.scss'
 
 class Board extends Component {
   constructor(props) {
@@ -164,7 +164,7 @@ class Board extends Component {
         key={index}
       />
     ));
-    return <div className="board">{rows}</div>;
+    return <div className={styles.board}>{rows}</div>;
   }
 }
 

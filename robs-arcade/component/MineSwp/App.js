@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BoardHead from "./components/BoardHead";
 import Board from "./components/Board";
+import styles from './base.module.scss'
 
 class App extends Component {
   constructor() {
@@ -8,7 +9,7 @@ class App extends Component {
 
     this.state = {
       gameStatus: "waiting", // can be running, waiting, or ended
-      time: 0, // in seconds, will format later
+      // time: 0, // in seconds, will format later
       flagCount: 10,
       openCells: 0,
       mines: 10,
@@ -34,9 +35,9 @@ class App extends Component {
     }
   }
 
-//   componentWillMount() {
-//     this.intervals = [];
-//   }
+  componentWillMount() {
+    this.intervals = [];
+  }
 
   setInterval = (fn, t) => {
     this.intervals.push(setInterval(fn, t));
@@ -49,12 +50,12 @@ class App extends Component {
     });
   };
 
-  tick = () => {
-    if (this.state.openCells > 0 && this.state.gameStatus === "running") {
-      let time = this.state.time + 1;
-      this.setState({ time });
-    }
-  };
+  // tick = () => {
+  //   if (this.state.openCells > 0 && this.state.gameStatus === "running") {
+  //     let time = this.state.time + 1;
+  //     this.setState({ time });
+  //   }
+  // };
 
   endGame = () => {
     this.setState({
@@ -82,10 +83,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="minesweeper">
+      <div className={styles.minesweeper}>
         <h1>Welcome to minesweeper.</h1>
         <BoardHead
-          time={this.state.time}
+          // time={this.state.time}
           flagsUsed={this.state.flagCount}
           reset={this.reset}
           status={this.state.gameStatus}

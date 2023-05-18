@@ -1,4 +1,4 @@
-.boardHead {
+/* .boardHead {
     display: flex;
     flex-direction: row;
     height: 55px;
@@ -59,7 +59,7 @@
           background-color: #eeeeee; }
         .board .row .cell:last-child {
           border-right: none;
-    }
+    } */
 
     
   

@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 
 const BoardHead = props => {
-  let minutes = Math.floor(props.time / 60);
-  let formattedSeconds = props.time - minutes * 60 || 0;
+  // let minutes = Math.floor(props.time / 60);
+  // let formattedSeconds = props.time - minutes * 60 || 0;
 
-  formattedSeconds =
-    formattedSeconds < 10 ? `0${formattedSeconds}` : formattedSeconds;
-  let time = `${minutes}:${formattedSeconds}`;
+  // formattedSeconds =
+  //   formattedSeconds < 10 ? `0${formattedSeconds}` : formattedSeconds;
+  // let time = `${minutes}:${formattedSeconds}`;
   let status =
     props.status === "running" || props.status === "waiting" ? (
       <i className="icon ion-happy-outline" />
@@ -21,7 +21,7 @@ const BoardHead = props => {
       <button className={styles.reset} onClick={props.reset}>
         {status}
       </button>
-      <div className={styles.timer}>{time}</div>
+      {/* <div className={styles.timer}>{time}</div> */}
     </div>
   );
 };
