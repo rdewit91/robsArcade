@@ -22,8 +22,8 @@ export default function Header() {
             </Link>
         </div>
         <div style={{ display: 'inline' }}>
-            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '0.1125em', margin: '0.1125em' }} href='/spacInvd' >
-                <button className={styles.bttnStyle} >SPACE INVADERS</button>
+            <Link style={{ textDecoration: 'none', color: '#fffffc', padding: '0.1125em', margin: '0.1125em' }} href='/lightsOut' >
+                <button className={styles.bttnStyle} >LIGHTS OUT</button>
             </Link>
         </div>
         <div style={{ display: 'inline' }}>
