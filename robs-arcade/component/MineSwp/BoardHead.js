@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from './styles.module.scss'
+import { BiHappy, BiSad }from 'react-icons/bi'
 
 const BoardHead = props => {
   let minutes = Math.floor(props.time / 60);
@@ -11,16 +12,17 @@ const BoardHead = props => {
   let time = `${minutes}:${formattedSeconds}`;
   let status =
     props.status === "running" || props.status === "waiting" ? (
-      <i className="icon ion-happy-outline"  />
+      // <i className="icon ion-happy-outline" />
+      < BiHappy />
     ) : (
-      <i className="icon ion-sad-outline" />
+      // <i className="icon ion-sad-outline" />
+      < BiSad />
     );
   return (
     <div className={styles.boardHead}>
       <div className={styles.flagCount}>{props.flagsUsed}</div>
       <button className={styles.reset} onClick={props.reset}>
         {status}
-        RESET
       </button>
       <div className={styles.timer}>{time}</div>
     </div>

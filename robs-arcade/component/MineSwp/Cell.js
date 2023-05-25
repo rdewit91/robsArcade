@@ -1,6 +1,5 @@
 import React from "react";
 import styles from './styles.module.scss'
-// import AiFillFlag from 'react-icons/ai'
 
 const Cell = props => {
   let cell = () => {
@@ -8,8 +7,7 @@ const Cell = props => {
       if (props.data.hasMine) {
         return (
           <div
-            class="cell open"
-            className={styles.open}
+           className={`${styles.cell} ${styles.open}`}
             onContextMenu={e => {
               // don't load that nasty context menu, flag it up instead :^)
               e.preventDefault();
@@ -22,8 +20,7 @@ const Cell = props => {
       } else if (props.data.count === 0) {
         return (
           <div
-            // className="cell open"
-            className={styles.open}
+           className={`${styles.cell} ${styles.open}`}
             onContextMenu={e => {
               // don't load that nasty context menu, flag it up instead :^)
               e.preventDefault();
@@ -35,8 +32,7 @@ const Cell = props => {
       } else {
         return (
           <div
-            // className="cell open"
-            className={styles.open}
+           className={`${styles.cell} ${styles.open}`}
             onContextMenu={e => {
               // don't load that nasty context menu, flag it up instead :^)
               e.preventDefault();
@@ -50,8 +46,7 @@ const Cell = props => {
     } else if (props.data.hasFlag) {
       return (
         <div
-          className="cell open-flag"
-          // className={styles.cell.open}
+        className={`${styles.cell} ${styles.openFlag}`}
           onContextMenu={e => {
             // don't load that nasty context menu, flag it up instead :^)
             e.preventDefault();
@@ -59,9 +54,7 @@ const Cell = props => {
           }}
           onClick={() => props.open(props.data)}
         >
-          <span><i className="icon ion-flag"></i></span>
-          {/* <span><i> <  AiFillFlag/> </i></span> */}
-         
+          <span><i className={`${styles.icon} ${styles.ionFlag}`}></i></span>
         </div>
       );
     } else {
