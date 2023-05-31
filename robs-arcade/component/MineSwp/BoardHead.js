@@ -13,10 +13,17 @@ const BoardHead = props => {
   let status =
     props.status === "running" || props.status === "waiting" ? (
       // <i className="icon ion-happy-outline" />
-      < BiHappy />
+      // < BiHappy />
+      <div>
+         <p>ALIVE! < BiHappy /></p>
+      </div>
+      
     ) : (
       // <i className="icon ion-sad-outline" />
-      < BiSad />
+      // < BiSad />
+      <div>
+        <p>DEAD! < BiSad /></p>
+      </div>
     );
   return (
     <div className={styles.boardHead}>

@@ -6,7 +6,7 @@ export default function lightsOut() {
   return (
     <div className={styles.homeBox} >
     <div className={styles.homeText} >
-      <h1>MINE SWEEPER</h1>
+      <h1>LIGHTS OUT</h1>
       <p>Heres how to play:</p>
       <p>The objective of the game is to turn off all the lights on the game board.</p>
       <p>However, whenever you press a button, it not only changes its own state but also toggles the state of adjacent buttons (up, down, left, and right).</p>

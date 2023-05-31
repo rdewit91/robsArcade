@@ -78,7 +78,7 @@ const ShowWinner = ({winner}) => {
   const text = {
   '-1': 'YOU WIN! PLAY HANG MAN!',
     0: 'ITS A TIE! PLAY MINE SWEEPER!',
-    1: 'YOU LOSE! PLAY SPACE INVADERS!',
+    1: 'YOU LOSE! PLAY LIGHTS OUT!',
     null: "GAME START!",
   };
   return <h2>{text[winner]}</h2>;

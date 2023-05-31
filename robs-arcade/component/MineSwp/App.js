@@ -20,11 +20,11 @@ class App extends Component {
     this.baseState = this.state;
   }
 
-  componentDidUpdate(nextProps, nextState) {
-    if (this.state.gameStatus === "running") {
-      this.checkForWinner();
-    }
-  }
+  // componentDidUpdate(nextProps, nextState) {
+  //   if (this.state.gameStatus === "running") {
+  //     this.checkForWinner();
+  //   }
+  // }
   
 
   checkForWinner = () => {
@@ -84,7 +84,7 @@ class App extends Component {
   render() {
     return (
       <div className={styles.mineSweeper}>
-        <h1>Welcome to minesweeper.</h1>
+        {/* <h1>Welcome to minesweeper.</h1> */}
         <BoardHead
           time={this.state.time}
           flagsUsed={this.state.flagCount}

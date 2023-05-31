@@ -1,7 +1,7 @@
 .gameContainer {
   border: solid #F9D949 5px;
-  background-color: #BDE6F1;
-  color: black;
+  background-color: #210062;
+  color: #BDE6F1;
     padding: 20px 30px;
     position: relative;
     margin: auto;
@@ -11,13 +11,17 @@
   
   .figureContainer {
     fill: transparent;
-    stroke: black;
+    stroke: #F9D949;
     stroke-width: 4px;
     stroke-linecap: round;
+
   }
   
   .figure-part {
     display: none;
+    box-shadow: 
+    0 0 22px #F9D949,
+    0 0 42px #F9D949
   }
   
   .wrongLettersContainer {
@@ -46,7 +50,7 @@
   }
   
   .letter {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #BDE6F1;;
     display: inline-flex;
     font-size: 30px;
     align-items: center;
