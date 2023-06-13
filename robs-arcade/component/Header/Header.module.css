@@ -25,12 +25,12 @@
 
 @media screen and (max-width: 375px) {
     .navHeadBody {
-      width:  45.8em;
+      width:  20em;
     }
   }
 
 @media screen and (min-width: 376px) and (max-width: 414px) {
     .navHeadBody {
-        width:  50em;
+        width:  20em;
       }
   }

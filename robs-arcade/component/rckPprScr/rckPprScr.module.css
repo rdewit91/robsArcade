@@ -1,10 +1,10 @@
 .gameBox {
-    margin: 3px;
-    padding: 3px;
+    margin: .18em;
+    padding: .18em;
     text-align: center;
-    border: solid #F9D949 5px;
+    border: solid #F9D949 .31px;
     position: relative;
-    width: 800px;
+    width: 50em;
 
     /* color: black; */
 }
@@ -16,35 +16,35 @@
 }
 
 .bckGrnd {
-    margin: 3px;
-    padding: 3px;
-    border: solid #F9D949 5px;
+    margin: .18em;
+    padding: .18em;
+    border: solid #F9D949 .31px;
     background-color: #BDE6F1;
     color: black;
-    width: 85px;
+    width: 5.31em;
 }
 
 .playBox {
-    margin: 3px;
-    padding: 3px;
-    border: solid #F9D949 3px;
+    margin: .18em;
+    padding: .18em;
+    border: solid #F9D949 .18em;
     background-color: #BDE6F1;
     /* color: black; */
-    height: 65px;
+    height: 2.8em;
 }
 
 .bttnBox {
-    margin: 3px;
-    padding: 3px;
-    border: solid #F9D949 3px;
+    margin: .18em;
+    padding: .18em;
+    border: solid #F9D949 .18em;
     display: flex;
     justify-content: space-evenly;
 }
 
 .bttnBttn {
-    margin: 3px;
-    padding: 3px;
-    border: solid #F9D949 3px;
+    margin: .18em;
+    padding: .18em;
+    border: solid #F9D949 .18em;
     background-color: #210062;
     color: #BDE6F1;
 }

@@ -20,6 +20,15 @@
   font-size: x-large;
 }
 
+
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  .homeBox {
+    height: 200em;
+    width: 55em;
+    /* font-size: xx-large; */
+  }
+}
+
 /* .main {
   display: flex;
   flex-direction: column;
@@ -185,7 +194,7 @@
   }
 } */
 
-@media (prefers-reduced-motion) {
+/* @media (prefers-reduced-motion) {
   .thirteen::before {
     animation: none;
   }
@@ -193,13 +202,13 @@
   .card:hover span {
     transform: none;
   }
-}
+} */
 
 /* Mobile */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .content {
     padding: 4rem;
-  }
+  } */
 
   /* .grid {
     grid-template-columns: 1fr;
@@ -270,7 +279,7 @@
     );
     z-index: 1;
   } */
-}
+/* } */
 
 /* Tablet and Smaller Desktop */
 /* @media (min-width: 701px) and (max-width: 1120px) {
