@@ -1,6 +1,6 @@
 .board {
-  width: 499px;
-  height: 499px;
+  // width: 499px;
+  // height: 499px;
   // border: solid #F9D949 5px;
   padding: 3px;
   margin: 3px;
@@ -101,7 +101,7 @@
 
 .board {
   width: 499px;
-  height: 500px;
+  height: 550px;
   // border: 1px solid #444;
   // border-bottom: none; 
 }
@@ -144,7 +144,7 @@
 .mineSweeper {
   display: flex;
   flex-direction: column;
-  height: 675px;
+  height: 700px;
   justify-content: center;
   align-items: center;  
 }

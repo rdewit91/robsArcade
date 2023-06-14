@@ -30,3 +30,19 @@
     background: #210062;
     text-align: center;
 }
+
+@media screen and (min-width: 375px) and (max-width: 740px) {
+    .cntcMeBox {
+        width: 390%;
+        height: 150em;
+    }
+    .cntcMeHead{
+        font-size: 3em;
+        width: 28em;
+    }
+    .cntcMeData {
+        font-size: 3em;
+        width: 28em;
+        width: 80%;
+    }
+}
