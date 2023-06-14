@@ -54,3 +54,9 @@
     background-color: #BDE6F1;
     cursor: pointer;
 }
+
+@media screen and (min-width: 375px) and (max-width: 740px) {
+    .gameBox {
+        width: 27em;
+    }
+}

@@ -21,12 +21,14 @@
 }
 
 
-@media screen and (min-width: 376px) and (max-width: 740px) {
+@media screen and (min-width: 375px) and (max-width: 740px) {
   .homeBox {
-    width: 300em;
+    width: 390%;
+    height: 150em;
   }
   .homeText {
-    font-size: .5em;
+    font-size: 3em;
+    width: 28em;
 
   }
 }
