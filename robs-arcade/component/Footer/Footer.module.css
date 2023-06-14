@@ -13,7 +13,7 @@
     border: solid #F9D949 0.1875em;
     background-color: #210062;
     color: #BDE6F1;
-    font-size: large;
+    font-size: 1.3em;
 }
 
 .bttnStyle:hover {
@@ -21,3 +21,11 @@
     background-color: #BDE6F1;
     cursor: pointer;
 }
+
+@media screen and (min-width: 375px) and (max-width: 740px) {
+    .navBody {
+        width:  32em;
+        font-size: 1.9em;
+        position: fixed;
+      }
+  }

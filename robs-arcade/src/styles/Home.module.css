@@ -1,6 +1,6 @@
 .homeBox {
-  margin: 50px;
-  padding: 5px;
+  margin: 3.125em;
+  padding: .3em;
   color: #BDE6F1 ;
   display: flex;
   flex-direction: column;
@@ -13,19 +13,21 @@
 
 .homeText {
   background: #210062;
-  margin: 5px;
-  padding: 5px;
-  border: solid #F9D949 5px;
+  margin: .3em;
+  padding: .3em;
+  border: solid #F9D949 .3em;
   text-align: center;
-  font-size: x-large;
+  font-size: 1.5em;
 }
 
 
-@media screen and (min-width: 376px) and (max-width: 414px) {
+@media screen and (min-width: 376px) and (max-width: 740px) {
   .homeBox {
-    height: 200em;
-    width: 55em;
-    /* font-size: xx-large; */
+    width: 300em;
+  }
+  .homeText {
+    font-size: .5em;
+
   }
 }
 
