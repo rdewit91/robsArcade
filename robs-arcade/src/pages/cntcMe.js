@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '@/styles/cntcMe.module.css'
+import Link from 'next/link'
 
 export default function cntcMe() {
   return (
@@ -19,6 +20,15 @@ export default function cntcMe() {
         <div className={styles.cntcText} >
           <h1>CELL PHONE</h1>
           <h1>585-315-3335</h1>
+        </div>
+      </div>
+      <div className={styles.cntcMeData} >
+        <div className={styles.cntcText} >
+          <h1>Portfolio</h1>
+          <Link href='https://rob-dewit-portfolio-2phe-git-main-rdewit91.vercel.app/' >
+            <button className={styles.bttnBttn} >CLICK HERE!</button>
+          </Link>
+          
         </div>
       </div>
     </div>   

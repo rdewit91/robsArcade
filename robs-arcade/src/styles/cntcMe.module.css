@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     color: #BDE6F1;
+    height: 800px;
 }
 
 .cntcMeHead {
@@ -29,6 +30,20 @@
     border: solid #F9D949 5px;
     background: #210062;
     text-align: center;
+}
+
+.bttnBttn {
+    margin: .18em;
+    padding: .18em;
+    border: solid #F9D949 .18em;
+    background-color: #210062;
+    color: #BDE6F1;
+}
+
+.bttnBttn:hover {
+    color: black;
+    background-color: #BDE6F1;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 375px) and (max-width: 740px) {
