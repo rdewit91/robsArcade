@@ -11,7 +11,7 @@
 
   .row {
     display: flex;
-    height: 45px;
+    height: 1.9em;
     &:last-child{
       // border-bottom: none;
       height: 50px;
@@ -100,20 +100,20 @@
 // }
 
 .board {
-  width: 499px;
-  height: 550px;
+  width: 25em;
+  height: 35em;
   // border: 1px solid #444;
   // border-bottom: none; 
 }
   .board .row {
     display: flex;
-    height: 50px; }
+    height: 1.9em; }
     .board .row:last-child {
       // border-bottom: none;
-      height: 50px; }
+      height: 1.9em; }
     .board .row .cell {
       // border-right: 1px solid #444;
-      width: 49px;
+      width: 2em;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -144,7 +144,7 @@
 .mineSweeper {
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 26em;
   justify-content: center;
   align-items: center;  
 }
@@ -155,3 +155,12 @@
       //   border-top: 1px solid #444;
       //   border-right: 1px solid #444; }
 
+      // @media screen and (min-width: 375px) and (max-width: 740px) {
+      //   .mineSweeper {
+      //     height: 20em;
+      //   }
+      //   // .board .row {
+      //   //   height: 1.9em;
+      //   // }
+        
+      // }

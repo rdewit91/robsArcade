@@ -24,7 +24,7 @@
 @media screen and (min-width: 375px) and (max-width: 740px) {
   .homeBox {
     width: 390%;
-    height: 150em;
+    height: 180em;
   }
   .homeText {
     font-size: 3em;

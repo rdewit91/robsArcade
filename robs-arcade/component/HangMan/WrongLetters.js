@@ -8,8 +8,9 @@ const WrongLetters = ({ wrongLetters }) => {
   return (
     <>
     <div className={styles.wrongLettersContainer }>
+    <h4>WRONG LETTERS</h4>
       <div>
-        {wrongLetters.length > 0 && <p>Wrong</p>}
+        {wrongLetters.length > 0 }
         {wrongLetters.map((letter, i) => <span key={i}>{letter}</span>).reduce((prev, curr) => prev === null ? [curr] : [prev, ', ', curr], null)}
       </div>
     </div>
