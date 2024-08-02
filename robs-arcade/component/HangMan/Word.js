@@ -19,3 +19,4 @@ const Word = ({ selectedWord, correctLetters }) => {
 }
 
 export default Word
+

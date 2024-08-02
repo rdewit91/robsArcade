@@ -56,6 +56,7 @@
   .word {
     border: solid #F9D949 5px;
     background-color: #BDE6F1;
+    color: black;
     display: flex;
     position: absolute;
     margin: 5px;
@@ -63,6 +64,9 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    /* display: flex;
+    justify-content: center;
+    margin: 20px; */
   }
   
   .letter {
@@ -74,6 +78,11 @@
     margin: 0 3px;
     height: 50px;
     width: 20px;
+    /* font-size: 2em;
+    margin: 0 5px;
+    border-bottom: 2px solid #000;
+    width: 20px;
+    text-align: center; */
   }
   
   .popupContainer {
